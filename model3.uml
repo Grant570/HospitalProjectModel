@@ -1,37 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_dC2tYGkyEeWbK9_YTfG6_g" name="RootElement">
-  <packagedElement xmi:type="uml:StateMachine" xmi:id="_dDbVIGkyEeWbK9_YTfG6_g" name="Area">
-    <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_mRrNYGkyEeWbK9_YTfG6_g" name="Referral "/>
-    <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_076NMGkyEeWbK9_YTfG6_g" name="Transfer"/>
-    <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_208ycGkyEeWbK9_YTfG6_g" name="Walk-in"/>
-    <region xmi:type="uml:Region" xmi:id="_dDwFQGkyEeWbK9_YTfG6_g" name="Region1">
-      <transition xmi:type="uml:Transition" xmi:id="_TH28gGk1EeWbK9_YTfG6_g" source="_mRrNYGkyEeWbK9_YTfG6_g" target="_i2f_oGk1EeWbK9_YTfG6_g"/>
-      <transition xmi:type="uml:Transition" xmi:id="_C2OroGk2EeWbK9_YTfG6_g" source="_076NMGkyEeWbK9_YTfG6_g" target="_i2f_oGk1EeWbK9_YTfG6_g"/>
-      <transition xmi:type="uml:Transition" xmi:id="_G6AqIGk2EeWbK9_YTfG6_g" source="_208ycGkyEeWbK9_YTfG6_g" target="_i2f_oGk1EeWbK9_YTfG6_g"/>
-      <transition xmi:type="uml:Transition" xmi:id="_JfsS8Gk2EeWbK9_YTfG6_g" name="assigned" source="_i2f_oGk1EeWbK9_YTfG6_g" target="_DfX2oGkzEeWbK9_YTfG6_g"/>
-      <transition xmi:type="uml:Transition" xmi:id="_XIRogGk2EeWbK9_YTfG6_g" name="Transfered" source="_DfX2oGkzEeWbK9_YTfG6_g" target="_BVKMYGk0EeWbK9_YTfG6_g"/>
-      <transition xmi:type="uml:Transition" xmi:id="_2a9BQGk2EeWbK9_YTfG6_g" source="_BVKMYGk0EeWbK9_YTfG6_g" target="_DfX2oGkzEeWbK9_YTfG6_g"/>
-      <subvertex xmi:type="uml:State" xmi:id="_DfX2oGkzEeWbK9_YTfG6_g" name="On_Campus">
-        <region xmi:type="uml:Region" xmi:id="_IKkacGkzEeWbK9_YTfG6_g" name="Region1">
-          <subvertex xmi:type="uml:State" xmi:id="_ILHNAGkzEeWbK9_YTfG6_g" name="Unit">
-            <region xmi:type="uml:Region" xmi:id="_MYqykWkzEeWbK9_YTfG6_g" name="Region1">
-              <subvertex xmi:type="uml:State" xmi:id="_MYsnwGkzEeWbK9_YTfG6_g" name="Room"/>
-              <subvertex xmi:type="uml:State" xmi:id="_PWWEoGkzEeWbK9_YTfG6_g" name="Office"/>
-            </region>
-          </subvertex>
-        </region>
-      </subvertex>
-      <subvertex xmi:type="uml:State" xmi:id="_BVKMYGk0EeWbK9_YTfG6_g" name="On_Other_Campus">
-        <region xmi:type="uml:Region" xmi:id="_O3nr0Gk0EeWbK9_YTfG6_g" name="Region1">
-          <subvertex xmi:type="uml:State" xmi:id="_O3phAGk0EeWbK9_YTfG6_g" name="Other_Unit">
-            <region xmi:type="uml:Region" xmi:id="_R8fLAGk0EeWbK9_YTfG6_g" name="Region1">
-              <subvertex xmi:type="uml:State" xmi:id="_R8hAMGk0EeWbK9_YTfG6_g" name="Other_Room"/>
-              <subvertex xmi:type="uml:State" xmi:id="_UyzQ0Gk0EeWbK9_YTfG6_g" name="Other_Office"/>
-            </region>
-          </subvertex>
-        </region>
-      </subvertex>
-      <subvertex xmi:type="uml:State" xmi:id="_i2f_oGk1EeWbK9_YTfG6_g" name="Hospital"/>
-    </region>
-  </packagedElement>
-</uml:Model>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ">
+  <uml:Model xmi:id="_dC2tYGkyEeWbK9_YTfG6_g" name="RootElement">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_dDbVIGkyEeWbK9_YTfG6_g" name="World">
+      <region xmi:type="uml:Region" xmi:id="_dDwFQGkyEeWbK9_YTfG6_g" name="Region1">
+        <transition xmi:type="uml:Transition" xmi:id="_TH28gGk1EeWbK9_YTfG6_g" source="_mRrNYGkyEeWbK9_YTfG6_g" target="_i2f_oGk1EeWbK9_YTfG6_g"/>
+        <transition xmi:type="uml:Transition" xmi:id="_C2OroGk2EeWbK9_YTfG6_g" source="_076NMGkyEeWbK9_YTfG6_g" target="_i2f_oGk1EeWbK9_YTfG6_g"/>
+        <transition xmi:type="uml:Transition" xmi:id="_G6AqIGk2EeWbK9_YTfG6_g" source="_208ycGkyEeWbK9_YTfG6_g" target="_i2f_oGk1EeWbK9_YTfG6_g"/>
+        <transition xmi:type="uml:Transition" xmi:id="_JfsS8Gk2EeWbK9_YTfG6_g" name="assigned" source="_i2f_oGk1EeWbK9_YTfG6_g" target="_DfX2oGkzEeWbK9_YTfG6_g"/>
+        <transition xmi:type="uml:Transition" xmi:id="_XIRogGk2EeWbK9_YTfG6_g" name="Transfered" source="_DfX2oGkzEeWbK9_YTfG6_g" target="_BVKMYGk0EeWbK9_YTfG6_g"/>
+        <transition xmi:type="uml:Transition" xmi:id="_2a9BQGk2EeWbK9_YTfG6_g" source="_BVKMYGk0EeWbK9_YTfG6_g" target="_DfX2oGkzEeWbK9_YTfG6_g"/>
+        <transition xmi:type="uml:Transition" xmi:id="_BqviYG44EeWrbbRXjEhwgg" name="discharge" source="_i2f_oGk1EeWbK9_YTfG6_g" target="_sQ3awG43EeWrbbRXjEhwgg"/>
+        <subvertex xmi:type="uml:State" xmi:id="_DfX2oGkzEeWbK9_YTfG6_g" name="On_Campus">
+          <region xmi:type="uml:Region" xmi:id="_IKkacGkzEeWbK9_YTfG6_g" name="Region1">
+            <subvertex xmi:type="uml:State" xmi:id="_ILHNAGkzEeWbK9_YTfG6_g" name="Unit">
+              <region xmi:type="uml:Region" xmi:id="_MYqykWkzEeWbK9_YTfG6_g" name="Region1">
+                <subvertex xmi:type="uml:State" xmi:id="_MYsnwGkzEeWbK9_YTfG6_g" name="Room"/>
+                <subvertex xmi:type="uml:State" xmi:id="_PWWEoGkzEeWbK9_YTfG6_g" name="Office"/>
+                <subvertex xmi:type="uml:State" xmi:id="_g0cQMG42EeWrbbRXjEhwgg" name="Floor"/>
+              </region>
+            </subvertex>
+          </region>
+        </subvertex>
+        <subvertex xmi:type="uml:State" xmi:id="_BVKMYGk0EeWbK9_YTfG6_g" name="On_Other_Campus">
+          <region xmi:type="uml:Region" xmi:id="_O3nr0Gk0EeWbK9_YTfG6_g" name="Region1">
+            <subvertex xmi:type="uml:State" xmi:id="_O3phAGk0EeWbK9_YTfG6_g" name="Other_Unit">
+              <region xmi:type="uml:Region" xmi:id="_R8fLAGk0EeWbK9_YTfG6_g" name="Region1">
+                <subvertex xmi:type="uml:State" xmi:id="_R8hAMGk0EeWbK9_YTfG6_g" name="Other_Room"/>
+                <subvertex xmi:type="uml:State" xmi:id="_UyzQ0Gk0EeWbK9_YTfG6_g" name="Other_Office"/>
+                <subvertex xmi:type="uml:State" xmi:id="_OZKVwG44EeWrbbRXjEhwgg" name="Other_Floor"/>
+              </region>
+            </subvertex>
+          </region>
+        </subvertex>
+        <subvertex xmi:type="uml:State" xmi:id="_i2f_oGk1EeWbK9_YTfG6_g" name="Hospital"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_sQ3awG43EeWrbbRXjEhwgg" name="Out Of Hospital"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_mRrNYGkyEeWbK9_YTfG6_g" name="Referral "/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_076NMGkyEeWbK9_YTfG6_g" name="Transfer"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_208ycGkyEeWbK9_YTfG6_g" name="Walk-in"/>
+      </region>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_2L1PEG43EeWrbbRXjEhwgg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2L3rUG43EeWrbbRXjEhwgg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <ActionLanguage:TextualRepresentation xmi:id="_2L5ggG43EeWrbbRXjEhwgg" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+  <ActionLanguage:TextualRepresentation xmi:id="__Y8e4G43EeWrbbRXjEhwgg" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+</xmi:XMI>
